@@ -1,0 +1,56 @@
+@media (max-width: 767px) {
+    .component-5 {
+        padding: 0 10px;
+        padding-top: 37px;
+        .highlighted-heading {
+            font-size: 27px;
+            .underline {
+                padding-top: 11px;
+                .line {
+                    width: 20%;
+                    gap: 1%;
+                }
+            }
+            margin-bottom: 35px;
+        }
+
+        .image-grid {
+            gap: 7.5px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 163px);
+
+            .image-item {
+                .icons {
+                    top: 40%;
+                    left: 51%;
+                    .round-icon {
+                        font-size: 12px;
+                        width: 27px;
+                        height: 27px;
+                        &.hide-mobile {
+                            display: none;
+                        }
+                        &.hide-tablet {
+                            display: flex;
+                        }
+                    }
+                }
+                .info {
+                    padding-top: 0px;
+                    h4 {
+                        font-size: 14px;
+                        line-height: 9px;
+                        padding-right: 0px;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        font-size: 11px;
+                        line-height: 10px;
+                        padding-left: 15px;
+                        transform: translateY(2px)
+                    }
+                }
+            }
+        }
+    }
+}

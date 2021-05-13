@@ -1,0 +1,41 @@
+@media (max-width: 767px) {
+    span.hide-mobile {
+        display: none;
+    }
+
+    .component-3 {
+        padding: 35px 0 40px 0;
+        .highlighted-heading {
+            font-size: 27px;
+            line-height: 30.2px;
+            margin-bottom: 32px;
+        }
+        .container {
+            padding: 0 18px;
+            gap: 15px;
+            .monitor {
+                flex-basis: 208px;
+            }
+            .about-us {
+                h2 {
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: -0.3px;
+                    margin-bottom: 11px;
+                }
+
+                .about-us-items {
+                    .item {
+                        .item-content {
+                            width: 100%;
+                        }
+                    }
+                    margin-bottom: 28px;
+                }
+            }
+            hr {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

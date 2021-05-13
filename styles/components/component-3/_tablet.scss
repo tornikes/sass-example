@@ -1,0 +1,98 @@
+@media (max-width: 1024px) {
+    .component-3 {
+        .container {
+            .about-us {
+                .about-us-items {
+                    grid-template-columns: 1fr;
+                    gap: 5px;
+
+                    .item {
+                        .item-content {
+                            h3 {
+                                display: none;
+                            }
+                        }
+
+                        .graphic {
+                            flex-basis: 40px;
+                            height: 40px;
+                        }
+
+                        p {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .component-3 {
+        padding-top: 70px;
+        padding-bottom: 75px;
+        .highlighted-heading {
+            font-size: 28.88px;
+            margin-bottom: 55px;
+        }
+
+        .container {
+            width: 100%;
+            padding:0 23px;
+            flex-direction: column;
+            gap: 32px;
+            .monitor {
+                @include has-covering-bg;
+                background-color: $bg-dark;
+                background-image: url('../images/component-3/mountains.jpg');
+                width: 100%;
+                flex-basis: 420px;
+
+                img {
+                    display: none;
+                }
+            }
+
+            .about-us {
+                h2 {
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }                
+
+                p {
+                    font-size: 13px;
+                    line-height: 23px;
+                    margin-bottom: 37px;
+                }
+
+                .about-us-items {
+                    margin-bottom: 30px;
+                    .item {
+                        .graphic {
+                            padding-top: 20px;
+                            flex-basis: 14px;
+                            height: 14px;
+                            font-size: 18px;
+                            background-color: transparent;
+                            color: $secondary;
+                        }
+                        .item-content {
+                            margin-left: 15px;
+                            width: 75%;
+                            min-width: 300;
+                        }
+                    }
+                    .item:last-of-type {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .show-tablet {
+        margin-bottom: 15px;
+    }
+}

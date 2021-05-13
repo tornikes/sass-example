@@ -1,0 +1,28 @@
+@media (max-width: 1024px) {
+    .component-4 {
+        padding-top: 72px;
+        padding-bottom: 0px;
+
+        .highlighted-heading {
+            font-size: 28px;
+            .underline {
+                margin-top: 4px;
+            }
+            margin-bottom: 12px;
+        }
+
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 77px;
+            padding-bottom: 71px;
+
+            .col {
+                width: 80%;
+                padding: 0;
+            }
+        }
+    }
+}

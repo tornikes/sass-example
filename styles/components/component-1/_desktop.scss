@@ -1,0 +1,12 @@
+@media (min-width: 1025px) {
+    .component-1 {
+        .nav-container {
+            .menu-button {
+                display: none;
+            }
+            ul {
+                display: flex;
+            }
+        }
+    }
+}

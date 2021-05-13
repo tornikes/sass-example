@@ -1,0 +1,136 @@
+.component-5 {
+    color: $cmp-3-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 108px;
+
+    .highlighted-heading {
+        margin-bottom: 85px;
+    }
+
+    .underline {
+        margin-top: 0;
+        font-size: 13px;
+        padding-top: 10px;
+        gap: 7.5%;
+        .line {
+            width: 21.8%;
+        }
+    }
+
+    .image-grid {
+        width: 100%;
+        display: grid;
+        padding-top: 1px;
+        grid-template-columns: 382fr 373fr 383fr 378fr 378fr;
+        grid-template-rows: repeat(2, 19.73vw);
+        gap: 8px;
+
+        .image-item {
+            background-color: $bg-dark;
+            position: relative;
+            cursor: pointer;
+            @include has-covering-bg;
+
+            .icons {
+                position: absolute;
+                z-index: 1;
+                top: 50%;
+                left: 50%;
+                transform: translate(-63%, -60%);
+                display: none;
+                gap: 0.5vw;
+                font-size: 1.17vw;
+                .round-icon {
+                    width: 2.4vw;
+                    height: 2.4vw;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $primary-text;
+                    border: 2px solid $secondary;
+                    &.solid {
+                        background-color: $secondary;
+                    }
+                
+                    .fa-chain {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+
+            .info {
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                width: 100%;
+                bottom: 0;
+                text-align: center;
+                font-weight: 600;
+                display: none;
+                background-color: $bg-dark;
+
+                h4 {
+                    font-size: 0.88vw;
+                    color: $primary-text;
+                    text-transform: uppercase;
+                    color: $primary-text;
+                    padding-right: 1em;
+                    padding-top: 1.1em;
+                    margin-bottom: 0.6em;
+                }
+                p {
+                    font-size: .67vw;
+                    font-style: italic;
+                    color: $secondary;
+                    margin-bottom: 1.385em;
+                    padding-right: 1.153em;
+                }
+            }
+
+            $images: (
+                1: '../images/component-5/computer.jpeg',
+                2: '../images/component-5/building.jpeg',
+                3: '../images/component-5/tokyo.jpeg',
+                4: '../images/component-5/sea.jpeg',
+                5: '../images/component-5/robot.jpg',
+                6: '../images/component-5/code.jpeg',
+                7: '../images/component-5/future.jpeg'
+            );
+
+            @each $index, $image in $images {
+                &:nth-of-type(#{$index}) {
+                    background-image: url(#{$image});
+                }
+            }
+
+            &:hover {
+                background-color: $bg-dark-op-9;
+                .info {
+                    display: block;
+                }
+                .icons {
+                    display: flex;
+                }
+            
+                &::after {
+                    display: block;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: none;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $bg-dark-op-9;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@media (max-width: 767px) {
+    .component-6 {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        .highlighted-heading {
+            font-size: 27px;
+            .underline {
+                padding-top: 6px;
+                .line {
+                    width: 24%;
+                }
+            }
+            margin-bottom: 40px;
+        }
+
+        .contact-container {
+            .contact-info {
+                flex-direction: column;
+                gap: 35px;
+                margin-bottom: 36px;
+            }
+            .contact-form {
+                padding: 0 20px;
+                .input-grid {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 11px;
+
+                    textarea {
+                        height: 140px;
+                    }
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}

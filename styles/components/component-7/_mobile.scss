@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    .component-7 {
+        padding-top: 38px;
+        .logo {
+            font-size: 32.5px;
+        }
+
+        .social-items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .social-item:nth-of-type(5) {
+                grid-column-start: 2;
+            }
+            padding-bottom: 40px;
+        }
+    }
+}

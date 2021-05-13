@@ -1,0 +1,11 @@
+@media (min-width: 1025px) {
+    .show-tablet {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    span.show-tablet, button.show-tablet {
+        display: inline;
+    }
+}
